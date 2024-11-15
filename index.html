@@ -139,21 +139,7 @@
     </div>
 
     <div id="visitor-count">
-        Visitors: <span id="count">0</span>
+        Visitors: <img src="https://hits.sh/wzq00.github.io.svg?view=today-total"/>
     </div>
-
-    <script>
-        // Simple visitor counter using localStorage
-        window.onload = function() {
-            let count = localStorage.getItem('visitorCount');
-            if (count === null) {
-                count = 1;
-            } else {
-                count = parseInt(count) + 1;
-            }
-            localStorage.setItem('visitorCount', count);
-            document.getElementById('count').textContent = count;
-        };
-    </script>
 </body>
 </html>
